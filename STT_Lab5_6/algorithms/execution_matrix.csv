@@ -1,0 +1,9 @@
+Configuration,Avg_Time_sec,Speedup,Failure_Counts,Failing_Tests
+"xdist -n 1, --dist load | run-parallel --parallel-threads 1",9.28,0.91,"[0, 0, 0]",
+"xdist -n 1, --dist no | run-parallel --parallel-threads 1",9.00,0.94,"[0, 0, 0]",
+"xdist -n 1, --dist load | run-parallel --parallel-threads auto",93.96,0.09,"[3, 4, 3]","tests/test_heap.py, tests/test_linkedlist.py, tests/test_compression.py"
+"xdist -n 1, --dist no | run-parallel --parallel-threads auto",92.21,0.09,"[3, 3, 4]","tests/test_heap.py, tests/test_linkedlist.py, tests/test_compression.py"
+"xdist -n auto, --dist load | run-parallel --parallel-threads 1",8.40,1.01,"[0, 0, 0]",
+"xdist -n auto, --dist no | run-parallel --parallel-threads 1",8.58,0.99,"[0, 0, 0]",
+"xdist -n auto, --dist load | run-parallel --parallel-threads auto",32.77,0.26,"[3, 3, 3]","tests/test_heap.py, tests/test_linkedlist.py"
+"xdist -n auto, --dist no | run-parallel --parallel-threads auto",32.73,0.26,"[3, 3, 3]","tests/test_heap.py, tests/test_linkedlist.py"

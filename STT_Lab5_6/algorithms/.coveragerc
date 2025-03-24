@@ -1,0 +1,13 @@
+[report]
+omit =
+    */python?.?/*
+    */site-packages/nose/*
+    *__init__*
+
+[run]
+source = algorithms
+omit = 
+    *tests/* 
+    *testsB/*
+    *all_tests/*
+
